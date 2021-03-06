@@ -41,21 +41,22 @@ public class Casino {
        game = displayMenu();
        
        switch(game){
-           case Constants.BLACK_JACK: 
+            case Constants.BLACK_JACK: 
                blackjack = new BlackJack(player);
                blackjack.play();
                break;
            
-           case Constants.SCRATCH: 
-               scratchers = new ScratchOffs();
+            case Constants.SCRATCH: 
+               scratchers = new ScratchOffs(player);
+               scratchers.play();
                break;
            
-           case Constants.SLOTS: 
+            case Constants.SLOTS: 
                slots = new Slots(player);
                slots.play();
                break;
            
-           default:
+            default:
                System.out.println("Game selection was invalid.");
                break;
                

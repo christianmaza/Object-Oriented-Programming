@@ -18,6 +18,8 @@ public class Constants {
     public static final int BUST = 21; 
     public static final int ZERO = 0; 
     public static final int ONE = 1;
+    public static final int FIVE = 5; 
+    public static final int TEN = 10;
     
     public enum Colors{
     RED, 
