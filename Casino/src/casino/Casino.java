@@ -42,7 +42,8 @@ public class Casino {
        
        switch(game){
            case Constants.BLACK_JACK: 
-               blackjack = new BlackJack();
+               blackjack = new BlackJack(player);
+               blackjack.play();
                break;
            
            case Constants.SCRATCH: 

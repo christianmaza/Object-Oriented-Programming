@@ -14,7 +14,7 @@ public class Player {
        
        System.out.println("Enter player name ");
        name = scan.next(); 
-       System.out.println("Enter amount of money to play(minimum $5) ");
+       System.out.println("Enter amount of money to play(minimum $10) ");
        money = scan.nextInt();
        
        setCash(money); 
