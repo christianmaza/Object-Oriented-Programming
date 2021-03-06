@@ -20,15 +20,15 @@ public class Deck {
     
     public Deck(){
         generateDeck();
-        System.out.println("*******************************");
-        System.out.println("Displaying the deck of cards");
-        System.out.println("*******************************");
-        displayDeck();
+        //System.out.println("*******************************");
+        //System.out.println("Displaying the deck of cards");
+        //System.out.println("*******************************");
+        //displayDeck();
         shuffleDeck();
-        System.out.println("*******************************");
-        System.out.println("Displaying the shuffled deck of cards");
-        System.out.println("*******************************");
-        displayDeck();      
+        //System.out.println("*******************************");
+        //System.out.println("Displaying the shuffled deck of cards");
+        //System.out.println("*******************************");
+        //displayDeck();      
     }
     
     public void generateDeck(){
@@ -54,7 +54,6 @@ public class Deck {
     
     public void displayDeck(){
         Iterator<Card> it = deck.iterator();
-    
         System.out.println("Deck size: " + Constants.NUM_CARDS_IN_DECK + " cards");
         System.out.println("Deck includes: ");
        //int counter = 0;
@@ -71,14 +70,22 @@ public class Deck {
     }
     
     public void shuffleDeck(){
-        System.out.println("*******************************");
-        System.out.println("Shuffling the deck of cards");
-        System.out.println("*******************************");
+        //System.out.println("*******************************");
+        //System.out.println("Shuffling the deck of cards");
+        //System.out.println("*******************************");
         List arrayDeck = new ArrayList<Card>(deck); 
         Collections.shuffle(arrayDeck); 
          
         Set<Card> newDeck = new HashSet<Card>(arrayDeck);
          
         deck = newDeck;
+    }
+    
+    public void setDeck(Set<Card> deck) {
+        this.deck = deck;
+    }
+
+    public Set<Card> getDeck() {
+        return deck;
     }
 }

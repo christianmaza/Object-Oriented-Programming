@@ -11,6 +11,13 @@ public class Constants {
     public static final int BET_BLACKJACK = 10; 
     public static final int BLACKJACK_PAYOUT = 20; 
     public static final int NUM_CARDS_IN_DECK = 52;
+    public static final int HIT = 1; 
+    public static final int STAND = 0;
+    public static final int DEALER_HIT = 16; 
+    public static final int DEALER_STAND = 17; 
+    public static final int BUST = 21; 
+    public static final int ZERO = 0; 
+    public static final int ONE = 1;
     
     public enum Colors{
     RED, 
