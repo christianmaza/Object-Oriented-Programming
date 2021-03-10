@@ -31,11 +31,13 @@ public class Slots {
     public void play(){
        int input; 
        
+       
        System.out.println("Let's play the slot machines!");
        System.out.println("Your current balance is $" + player.getCash());
        System.out.println("The bet is $" + Constants.BET);
        System.out.println("Match two symbols to win $" + Constants.PAIR_PAYOUT);
        System.out.println("Match all three symbols to win $" + Constants.TRIPLE_PAYOUT);
+       
        
        if(player.getCash() < Constants.BET){
            System.out.println("Sorry, you don't have enough money to play.");

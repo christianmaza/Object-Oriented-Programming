@@ -15,6 +15,7 @@ public class Player implements IPlayer {
     private boolean busted;
     
     public Player(){
+       /*
        int money; 
        String name;
        scan = new Scanner(System.in);
@@ -28,6 +29,7 @@ public class Player implements IPlayer {
        hand = new ArrayList<Card>(); 
        score = 0; 
        busted = false;
+       */
        
     }
     

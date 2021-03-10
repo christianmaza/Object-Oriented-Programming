@@ -3,7 +3,8 @@ import java.util.Scanner;
 import constants.Constants; 
 import blackjack.BlackJack; 
 import scratchOffs.ScratchOffs;
-import slots.Slots; 
+import slots.Slots;  
+import userInterface.CasinoUI;
 
 public class Casino { 
     
@@ -11,8 +12,10 @@ public class Casino {
     private static ScratchOffs scratchers; 
     private static Slots slots;
     private static Player player;
-    private static Scanner scan;
+    private static Scanner scan; 
+    private static CasinoUI ui;
     
+    /*
     private static int displayMenu(){
         int select;
         
@@ -32,12 +35,17 @@ public class Casino {
         
         return select;
     }
+    */
+    
     public static void main(String[] args) {
        int game; 
        scan = new Scanner(System.in); 
        
-       player = new Player();
+       player = new Player(); 
        
+       ui = new CasinoUI(new Casino());
+       
+       /*
        game = displayMenu();
        
        switch(game){
@@ -59,7 +67,40 @@ public class Casino {
             default:
                System.out.println("Game selection was invalid.");
                break;
-               
+             
        }
+       */
+    }
+
+    public static BlackJack getBlackjack() {
+        return blackjack;
+    }
+
+    public static void setBlackjack(BlackJack blackjack) {
+        Casino.blackjack = blackjack;
+    }
+
+    public static ScratchOffs getScratchers() {
+        return scratchers;
+    }
+
+    public static void setScratchers(ScratchOffs scratchers) {
+        Casino.scratchers = scratchers;
+    }
+
+    public static Slots getSlots() {
+        return slots;
+    }
+
+    public static void setSlots(Slots slots) {
+        Casino.slots = slots;
+    }
+
+    public static Player getPlayer() {
+        return player;
+    }
+
+    public static void setPlayer(Player player) {
+        Casino.player = player;
     }
 }
